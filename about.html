@@ -1,204 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Meet Our Team 🗽 </title>
-  <style>
-    body {
-      
-      margin: 0;
-      padding: 0;
-      font-family: 'Arial', sans-serif;
-      background: linear-gradient(to bottom, #f0f0f0, #e0e0e0); 
-      color: rgb(247, 8, 139);
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    .header {
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #f0f0f0, #e0e0e0); 
+  }
+    .header{
       background-color: #fff;
-      padding: 20px;
-      display: flex;
-      align-items: center;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        background-color: fff;
+    }
+   
+
+    .logo{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        background-color: #fff;
+        background: radial-gradient(circle at 50% 50%, #007bff, transparent);
+    }
+    .logo-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+       font-size: 2em;
+       color: #007bff;
+       text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
     }
 
-    .logo {
-      width: 150px;
-      height: 150px;
-      background-color: #fff;
-      border-radius: 50%;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      position: relative;
-      overflow: hidden;
-      margin-right: 30px;
-    }
-
-    .logo-text  {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 2em;
-      color: #007bff;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8);
-    }
-    
-
-    .logo::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: radial-gradient(circle at 50% 50%, #007bff, transparent);
-    
-    }
-
-    .content {
-      padding: 30px;
-      flex-grow: 1;
-      display: flex;
-      flex-direction: column;
-      background: linear-gradient(to bottom, #be096d, #03b61b);
-      
-      
-      
-      
-    }
-
-     h1 {
+    h1 {
        
-      color: #007bff;
-      text-align: center;
-      margin-bottom: 20px;
-      
-      
-     
-    }
+       color: #007bff;
+       text-align: center;
+     }
+     .t{
+        margin-right: 15%;
     
-   
-
-    .team-members {
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: center; 
-    background: linear-gradient(to bottom, #2ed604, #eb09cd);
-    max-width: 100%; 
-    padding: 10px 0; 
-      
+        align-items: center;
+        padding: 0px 30px;
+        border: 1px ;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        border-radius: 20%;
       
     }
-    
-    .member { 
-      
-    width: 200px; 
-    height: 300px; 
-    margin: 10px; 
-    padding: 20px;
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s; 
-     
-      
-    }
-    .member:hover{
-      transform: translateY(-5px);
-      background: linear-gradient(to bottom, #4720a1, #10c20a);
-      box-shadow: 0 2px 4px rgb(0, 0, 0.1);
-      cursor: pointer;
+   .t h1, .t h3 {
+     text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
+      animation: color-change 5s infinite alternate; 
+      }
 
-    }
-
-    .member img  {
-      width: 100px;
-      height: 100px;
-      border-radius: 50%;
-      margin-bottom: 10px;
-      
-      
-    }
-    .member img:hover{
-      overflow: hidden;
-      transform: scale(1.1);
-    }
-    .member h2 {
-      margin-bottom: 5px;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
-      animation: glow 1s ease-in-out infinite alternate;
-
-     
-    }
-
-    .member p {
-      margin-bottom: 10px;
-      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
-     animation: glow 1s ease-in-out infinite alternate;
-
-    }
-    
-@keyframes glow {
-  0% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  }
-  50% {
-    text-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
-  }
-  100% {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  }
-}
-    .p{
-      color: #f50606;
-      
-    }
-    
-    .n{
-      margin-left: 120px;
-    
-    }
-    
- #navbar{
-
-    justify-content:left;
-    align-items: center;
-
-
-}
-  #navbar img{
-    
+ #navbar img{
     width:200px;
-    margin-left:200px ;
+  
 }
-   
-    .t{
-      width:60vh;
-     
-      border-radius: 90px;
-      margin-left: 100px;
-      animation: color-change 5s infinite;
-      
-      
- 
-    }
-   
-    
-    .t.l{
-      
-      color: rgb(35, 224, 10);
-      margin-left: 170px;
-
-    }
-    
-.t h1, .t h3 {
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); 
-  animation: color-change 5s infinite alternate; 
-}
-
-@keyframes color-change {
-  0% {
+@keyframes  color-change {
+    0% {
     color: #007bff; 
     text-shadow: 0 0 10px blue;
   }
@@ -211,98 +77,87 @@
     text-shadow: 0 0 10px green;
   }
 }
+/*end header*/
 
-    .footer {
-      background-color: #fff;
-      padding: 20px;
-      text-align: center;
-      background: url('./about/./shapes-3d-4k-yj-3840x2400.jpg')center center/cover fixed ;
+
+
+/**/
+.content {
+      padding: 30px;
+      background: linear-gradient(to bottom, #be096d, #03b61b);
     }
-     .footer p {
-      color: #333;
-    }
-    .d{
-      
+
+.team-members{
     display: flex;
-    justify-content:left;
     align-items: center;
-    }
-   .d img{
-    margin-top: 5px;
-    margin-left: 650px;
-    width:200px;
-    border-radius: 6vh;
+    justify-content: center; 
+    background: linear-gradient(to bottom, #2ed604, #eb09cd);
+    padding: 10px 0; 
+}
+
+.member { 
+    
+      width: 200px; 
+      height: 300px; 
+      margin: 10px; 
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s; 
+       
+        
+      }
+      .member:hover{
+      transform: translateY(-5px);
+      background: linear-gradient(to bottom, #4720a1, #10c20a);
+      box-shadow: 0 2px 4px rgb(0, 0, 0.1);
+      cursor: pointer;
 
     }
-   .r{
-    background: none;
-    color: #fff;
-    font-size: large;
-    cursor: pointer;
-    border:5px solid #06df2a;
-    display: inline-block;
-    padding: 15px 30px;
-    border-radius: 15px;
-    margin-left: 30px;
-    text-decoration:#03b61b;
-    font-style:italic;
-}
- .r:hover{
-  background: linear-gradient(to bottom, #50db2d, #d31aab);
-  border:7px solid #df06a9;
+.member img  {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    
+    .member img:hover{
+      overflow: hidden;
+      transform: scale(1.1);
+    }
+    .member h2{
+      margin-bottom: 5px;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+      animation: glow 1s ease-in-out infinite alternate;
+    } 
+    
+    .p{
+      color: #f50606;
+      
+    }
+ 
+    .member p {
+      margin-bottom: 10px;
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); 
+     animation: glow 1s ease-in-out infinite alternate;
 
-}
-.moving-text{
-  animation:moveText 2s infinite alternate;
-}
-@keyframes moveText {
+    }
+@keyframes glow {
   0% {
-    transform:translateX(0);
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
-  100%{
-    transform: translateX(200px);}
-
+  50% {
+    text-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
   }
-
- .f{
-  background: linear-gradient(to bottom, #136e6a, #0a0a0a);
-  margin-left: 200px;
-  margin-right: 180px;
-  height: 20vh;
-
- }
-
-
-#o{
-  color: #03b61b;
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
 }
-
-.j{
-  color: #d5d810;
-  
-}
-#o{
-  color:#d5d810 ;
-  position: sticky;
-  top: 0;
-}
-
-.qq{
-  color: red;
-}
-
-
-
-
-
-
-:root
-{
-	--black: #333;
-	--light-color: #cdaa7c;
-	--box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
-}
-
+   
+    /*end main*/
+    /**/
     #zzz{
         
         background: linear-gradient(to bottom, #be096d, #03b61b);
@@ -375,215 +230,380 @@
         button:hover {
             background-color: #be096d;
             color: #ddd;
-        }
- 
-       
+        } 
+    /*end nods*/
+    /*start footer*/
 
-    
-
-
-
+.yellow{
+  color:#d5d810 ;
   
+  font-size: 40px;
+  top: 0;
+}
+.red{
+  color: red;
+}
 
-  </style>
-</head>
+    .footer {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      background: url('./1/about/./shapes-3d-4k-yj-3840x2400.jpg')center center/cover fixed ;
+    }
+     .footer p {
+      color: #333;
+    } 
+   
+ .f{
+  background: linear-gradient(to bottom, #136e6a, #0a0a0a);
+  margin-left: 200px;
+  margin-right: 180px;
+  margin-bottom: 10px;
+  height: 20vh;
+ }
+ .f h2{
+  color: rgb(247, 8, 139);
+ }
+.moving-text{
+  animation:moveText 2s infinite alternate;
+}
+@keyframes moveText {
+  0% {
+    transform:translateX(0);
+  }
+  100%{
+    transform: translateX(200px);}
+
+  }
+  
+  .bookboton{
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      }
+     .bookboton img{
+      width:200px;
+      border-radius: 6vh;
+  
+      }
+     .bookboton a{
+      color: #fff;
+      font-size: large;
+      cursor: pointer;
+      border:5px solid #06df2a;
+      padding: 15px 30px;
+      border-radius: 15px;
+      text-decoration:#03b61b;
+      font-style:italic;
+  }
+   .bookboton a:hover{
+    background: linear-gradient(to bottom, #50db2d, #d31aab);
+    border:7px solid #df06a9;
+  
+  }
+    /*end footer*/
+
+/*telphone*/
+
+
+    @media (max-width: 768px) { /* Adjust the breakpoint as needed */
+    .header {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: center; /* Center horizontally */
+        justify-content: center;
+        padding: 20px; /* Add some padding */
+    }
+
+    .logo {
+        width: 100px; /* Smaller logo */
+        height: 100px;
+        margin-bottom: 10px; /* Add space below logo */
+    }
+
+    .t {
+        margin: 10px 0; /* Adjust margins for smaller screens */
+        text-align: center; /* Center the text */
+        padding: 10px; /* Reduce padding */
+        border-radius: 10%;
+        margin-right: 0;
+        width: 90%;
+        box-sizing: border-box;
+    }
+
+    .t h1, .t h3 {
+        font-size: 1.2em; /* Smaller font size */
+    }
+    #navbar img {
+        width: 150px;
+    }
+    h1 {
+        font-size: 1.5em; /* Smaller heading */
+        margin-bottom: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    .team-members {
+        flex-direction: column; /* Stack team members vertically */
+        align-items: center;
+    }
+
+    .member {
+        width: 90%; /* Make members take full width */
+        margin: 10px 0; /* Adjust margins */
+        height: auto;
+        box-sizing: border-box; /* Include padding and border in element's total width and height */
+
+    }
+    .member:hover {
+        transform: translateY(0);
+    }
+
+    .member img {
+        width: 80px; /* Smaller image */
+        height: 80px;
+        margin-bottom: 5px;
+    }
+
+    .member h2 {
+        font-size: 1.2em;
+    }
+
+    .member p {
+        font-size: 1em;
+    }
+
+    .review-container {
+        max-width: 90%; /* Occupy more width on smaller screens */
+    }
+
+    .footer {
+        padding: 10px;
+        text-align: center;
+    }
+    .f {
+        margin: 10px;
+        height: auto;
+        margin-left: 10px;
+        margin-right: 10px;
+        box-sizing: border-box;
+    }
+    .moving-text {
+        font-size: 1.2em;
+        animation: none; /* Disable animation on smaller screens */
+    }
+    .bookboton {
+        margin-bottom: 20px;
+    }
+    .bookboton img {
+        width: 150px;
+    }
+    .bookboton a {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+    marquee {
+        font-size: 0.8em;
+        margin: 10px;
+    }
+    p {
+        text-align: center;
+        margin: 10px 0;
+        font-size: small;
+    }
+}
+</style>
 <body>
-  <header class="header">
-    <div class="logo"> 
-      <div class="logo-text">academy</div>
-    </div>
- 
+    <header class="header">
+
+        <div class="logo">
+            <div class="logo-text">
+                academy
+            </div>
+        </div>
+
+
+
     <h1>Meet Our Team </h1>
+
     <div class="t">
-       <pr>
+        <pr>
+         
+          <h1 class="l">بسم الله الرحمان الرحيم</h1> 
+         
+         <br>
+         
+          <h3 class="n">اكاديمية العلوم الهندسية والطبية</h3> 
         
-         <h1 class="l">بسم الله الرحمان الرحيم</h1> 
-        
-        <br>
-        
-         <h3 class="n">اكاديمية العلوم الهندسية والطبية</h3> 
-       
+     </div>
+
+
+
+  <div id ="navbar">
+      <img src="./1/about/u.jpg" alt="food lover logo">
     </div>
-    <div id ="navbar">
-      <img src="./about/u.jpg" alt="food lover logo">
-    </div>
-       
-  </header>
-
-  <main class="content">
-    <div class="team-members">
-      
-      <div class="member">
-        <img src="./about/IMG_20241010_030938_688.jpg" alt="Member 1">
-        <h2 class="p"> لمياء حسين بشري عبد الكريم  </h2>
-        <p>Information Tichnology 5 (It) </p>
-        <h5><a href="mailto:lamiahussein75@gmail.com">lamiahussein75@gmail.com</a></h5>
-        🍂 📗
-        <br>
-      </div>
-      <div class="member">
-        <img src="  ./about/IMG_20241010_030938_748.jpg" alt="Member 3">
-        <h2 class="p"> دانية خضر محمد </h2>
-        <br>
-        <p>Information Tichnology 5 (It) </p>
-        <h5><a href="mailto:khidermohameddania@gmail.com" >khidermohameddania@gmail.com</a></h5>
-        🍂 📗
-        <br>
-      </div>
-      
-      <div class="member">
-        <img src="./about/IMG_20241010_030938_725.jpg" alt="Member 2">
-        <h2 class="p">رانيا محمد ميرغني الفحل  </h2>
-        <br>
-        <p> Information Tichnology 5 (It) </p>
-       <h5><a href="mailto:Raniaalfahal2r2@gmail.com">Raniaalfahal2r2@gmail.com</a></h5>
-       🍂 📗
-       <br>
-      </div>
-      <div class="member">
-        <img src="./about/IMG_20241010_030938_341.jpg" alt="Member 4">
-        <h2 class="p">حياة الفاضل عبدالله خميس </h2>
-        <p>Information Tichnology 5 (It) </p>
-        <h5><a href="mailto:hayatalfadil2112@gmail.com">Hayatalfadil2112@gmail.com</a></h5>
-        🍂 📗
-        <br>
-      </div>
-      <div class="member">
-        <img src="./about/IMG_20241010_030938_372.jpg" alt="Member 4">
-        <h2 class="p">الطيب عوض  الجيد فضل المولي </h2>
-        <p>Information Tichnology 5 (It) </p>
-        <h5><a href="mailto:Aleteuep2535@gmail.com">Aleteuep2535@gmail.com</a></h5>
-        🍂 📗
-        <br>
-      </div>
-    </div>
-  </main>
 
 
+</header>
 
 
-  <section>
-    <div id="zzz">
-        <h1 class="nodes">آراء أوالتعليقات</h1>
-        <div class="review-container" id="reviewContainer">
-            <div class="review">
-                <h3>أحمد</h3>
-                <p>المكتبة رائعه، والخدمة ممتازة!</p>
-            </div>
-            <div class="review">
-                <h3>سارة</h3>
-                <p>أحببت المكتبة.</p>
-            </div>
-        </div>
-        <div class="form-container">
-            <h2 class="nodes">أضف رأيك</h2>
-            <form id="reviewForm" action="https://formspree.io/f/xgvolrko" method="POST">
-                <input type="text" id="name" name="name" placeholder="اسمك" required>
-                <textarea id="reviewText" name="reviewText" rows="4" placeholder="اكتب رأيك هنا..." required></textarea>
-                <button type="submit" id="submitReview">إرسال</button>
-            </form>
-        </div>
-    </div>
+<!--end header-->
+<!--start main-->
+    <main class="content">
+  <div class="team-members">
+<div class="member">
+    <img src="./1/about/IMG_20241010_030938_688.jpg" alt="Member 1">
+    <h2 class="p"> لمياء حسين بشري عبد الكريم  </h2>
+    <p>Information Tichnology 5 (It) </p>
+    <h5><a href="mailto:lamiahussein75@gmail.com">lamiahussein75@gmail.com</a></h5>
+    🍂 📗
+    <br>
+</div>
+<div class="member">
+    <img src="  ./1/about/IMG_20241010_030938_748.jpg" alt="Member 3">
+    <h2 class="p"> دانية خضر محمد </h2>
+    <br>
+    <p>Information Tichnology 5 (It) </p>
+    <h5><a href="mailto:khidermohameddania@gmail.com" >khidermohameddania@gmail.com</a></h5>
+    🍂 📗
+    <br>
+  </div>
+  
+  <div class="member">
+    <img src="./1/about/IMG_20241010_030938_725.jpg" alt="Member 2">
+    <h2 class="p">رانيا محمد ميرغني الفحل  </h2>
+    <br>
+    <p> Information Tichnology 5 (It) </p>
+   <h5><a href="mailto:Raniaalfahal2r2@gmail.com">Raniaalfahal2r2@gmail.com</a></h5>
+   🍂 📗
+   <br>
+  </div>
+  <div class="member">
+    <img src="./1/about/IMG_20241010_030938_341.jpg" alt="Member 4">
+    <h2 class="p">حياة الفاضل عبدالله خميس </h2>
+    <p>Information Tichnology 5 (It) </p>
+    <h5><a href="mailto:hayatalfadil2112@gmail.com">Hayatalfadil2112@gmail.com</a></h5>
+    🍂 📗
+    <br>
+  </div>
+  <div class="member">
+    <img src="./1/about/IMG_20241010_030938_372.jpg" alt="Member 4">
+    <h2 class="p">الطيب عوض  الجيد فضل المولي </h2>
+    <p>Information Tichnology 5 (It) </p>
+    <h5><a href="mailto:Aleteuep2535@gmail.com">Aleteuep2535@gmail.com</a></h5>
+    🍂 📗
+    <br>
+  </div>
+   </div>
+    </main>
+<!--end main-->
+
+
+
+<!--start nods-->
+<section>
+  <div id="zzz">
+      <h1 class="nodes">آراء أوالتعليقات</h1>
+      <div class="review-container" id="reviewContainer">
+          <div class="review">
+              <h3>أحمد</h3>
+              <p>المكتبة رائعه، والخدمة ممتازة!</p>
+          </div>
+          <div class="review">
+              <h3>سارة</h3>
+              <p>أحببت المكتبة.</p>
+          </div>
+      </div>
+      <div class="form-container">
+          <h2 class="nodes">أضف رأيك</h2>
+          <form id="reviewForm" action="https://formspree.io/f/xgvolrko" method="POST">
+              <input type="text" id="name" name="name" placeholder="اسمك" required>
+              <textarea id="reviewText" name="reviewText" rows="4" placeholder="اكتب رأيك هنا..." required></textarea>
+              <button type="submit" id="submitReview">إرسال</button>
+          </form>
+      </div>
+  </div>
 </section>
+<!--end nods-->
+<!--start footer-->
+<footer class="footer">
+  <h2>   <span class="yellow">   websit 🖋    </span> </h2><span class="yellow"> **** </span>  <span class="red "> ****  ****</span>     <span class="yellow">  **** </span></h2>
 
+ <div class="f">
+  <h1 class="moving-text"> 
+    📖_________ خدمة العملاء __________ 📕
 
-
-
-
-
-
-
-
-
-
-
-
-  <footer class="footer">
+  </h1>
+  <h2 style="background-color: rgb(15, 15, 15);display: inline;">  
+    "مرحبًا بك في مكتبة الكتب الإلكترونية، حيث تجتمع الثقافة والمعرفة في مكان واحد! تعد مكتبتنا مصدرك الموثوق للعديد من الكتب الرائعة في مجموعة متنوعة من المواضيع التي تلبي جميع اهتماماتك واحتياجاتك.
     
-    <h1 id="o" >   <span class="j"> <h2>   edraak websit 🖋 </h2>  **** </span> <span class="qq"> **** ****  </span>****   </h1>
-    <div class="f">
-   
-
-      <h1 class="moving-text"> 
-        📖_________ خدمة العملاء __________ 📕
-
-      </h1>
-      
-      <h2 style="background-color: rgb(15, 15, 15);display: inline;">  
-        "مرحبًا بك في مكتبة الكتب الإلكترونية، حيث تجتمع الثقافة والمعرفة في مكان واحد! تعد مكتبتنا مصدرك الموثوق للعديد من الكتب الرائعة في مجموعة متنوعة من المواضيع التي تلبي جميع اهتماماتك واحتياجاتك.
-        
-
-      <br>
-     * ولله الحمد *
-    </h2>
-    </div>
-    
-    
-    <div class="d">
-      <img src="./buyer/assets_12cbceb6be9648e2a8a23b8c10684f0b_e0079f42ff1f47adb80d6c794781f913.webp" alt="book " >
-      
-    </div>
-    <a href="index.html" class="r"> رجوع للمتجر </a>
-
-    <h1 id="o" > ****<span class="qq"> **** ****  </span>  <span class="j"> **** **** **** **** </span> <span class="qq"> **** ****  </span>****   </h1>
-    
-    
-  
 
   <br>
-  <h1>Thank<span class="j"> You </span> <span id="o"> for</span>  FOLLowing Us </h1>
-   
+ * ولله الحمد *
+</h2>
+
+</div>
+
+
+<div class="bookboton">
+  <img src="./1/buyer/assets_12cbceb6be9648e2a8a23b8c10684f0b_e0079f42ff1f47adb80d6c794781f913.webp" alt="book " >
+  <a href="index.html" > رجوع للمتجر </a>
+</div>
+
+
+</footer>
+
+<marquee direction="right"; bgcolor="rgb(255,0,0) " style="background-color: rgb(8, 8, 8); height: 30px; color: #2ed604 ;  font-size: larger; border-radius: 10px;margin-left: 50px; margin-right: 50px;"  >  استمتع بالقراءة في أي وقت وفي أي مكان ، عبر  متجرنا   مما يتيح لك  بيع وشرا الكتب . انضم الآن إلى عالم القراءة الرقمي    * </marquee>
+
+
+<p style="margin-left: 90vh; color: #3f0dc9;  ">&copy; 2024 all right reserved 🔏</p>
+<br>
+
+
+<!--end footer-->
+
+<script>
+  document.getElementById('reviewForm').addEventListener('submit', function(event) {
+      event.preventDefault(); 
+
+      const formData = {
+          name: document.getElementById('name').value,
+          reviewText: document.getElementById('reviewText').value,
+      };
+
   
-                  
- 
-  </footer>
+      fetch('https://formspree.io/f/xgvolrko', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(formData),
+      })
+      .then(response => {
+          if (response.ok) {
+           
+              const reviewContainer = document.getElementById('reviewContainer');
+              const newReview = document.createElement('div');
+              newReview.classList.add('review');
+              newReview.innerHTML = `<h3>${formData.name}</h3><p>${formData.reviewText}</p>`;
+              reviewContainer.appendChild(newReview);
 
-  <marquee direction="right"; bgcolor="rgb(255,0,0) " style="background-color: rgb(8, 8, 8); height: 30px; color: #2ed604 ;  font-size: larger; border-radius: 10px;margin-left: 50px; margin-right: 50px;"  >  استمتع بالقراءة في أي وقت وفي أي مكان ، عبر  متجرنا   مما يتيح لك  بيع وشرا الكتب . انضم الآن إلى عالم القراءة الرقمي    * </marquee>
-
-
-  <p style="margin-left: 90vh; color: #3f0dc9;  ">&copy; 2024 all right reserved 🔏</p>
-  <br>
-  
-  <script>
-    document.getElementById('reviewForm').addEventListener('submit', function(event) {
-        event.preventDefault(); 
-
-        const formData = {
-            name: document.getElementById('name').value,
-            reviewText: document.getElementById('reviewText').value,
-        };
-
-    
-        fetch('https://formspree.io/f/xgvolrko', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formData),
-        })
-        .then(response => {
-            if (response.ok) {
-             
-                const reviewContainer = document.getElementById('reviewContainer');
-                const newReview = document.createElement('div');
-                newReview.classList.add('review');
-                newReview.innerHTML = `<h3>${formData.name}</h3><p>${formData.reviewText}</p>`;
-                reviewContainer.appendChild(newReview);
-
-             
-                document.getElementById('name').value = '';
-                document.getElementById('reviewText').value = '';
-                alert('تم إرسال رأيك بنجاح!');
-            } else {
-                alert('حدث خطأ أثناء إرسال الطلب');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('حدث خطأ أثناء إرسال الطلب');
-        });
-    });
+           
+              document.getElementById('name').value = '';
+              document.getElementById('reviewText').value = '';
+              alert('تم إرسال رأيك بنجاح!');
+          } else {
+              alert('حدث خطأ أثناء إرسال الطلب');
+          }
+      })
+      .catch(error => {
+          console.error('Error:', error);
+          alert('حدث خطأ أثناء إرسال الطلب');
+      });
+  });
 </script>
 </body>
-
 </html>
